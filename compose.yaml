@@ -1,11 +1,11 @@
 version: '3'
 services:
-  hub-tg-bot:
-    image: project_one:latest
+  newflat-tg-bot:
+    image: tg_bot:release
     build:
       context: .
       dockerfile: dockerfile
     volumes:
       - .:/opt/bot  # Монтируем текущую директорию хоста внутрь контейнера
-    container_name: Prototipe
+    container_name: I_Want_New_Flat_TG_Bot
     restart: always
