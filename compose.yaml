@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hub-tg-bot:
+    image: project_one:latest
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - .:/opt/bot  # Монтируем текущую директорию хоста внутрь контейнера
+    container_name: Prototipe
+    restart: always
